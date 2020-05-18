@@ -48,6 +48,7 @@
     "modify_metadef_tag":"",
     "add_metadef_tag":"",
     "add_metadef_tags":"",
-    "pp:image_admin_only":"role:image_admin or role:cloud_image_admin or role:admin"
+    "pp:image_admin_only":"role:image_admin or role:cloud_image_admin or role:admin",
+    "pp:image_viewer_only":"role:image_viewer or pp:image_admin_only"
 }
 
