@@ -60,6 +60,8 @@ spec:
       role_assignments:
       - project: service
         role: service
+      - project: service
+        role: swiftoperator
     groups:
     - name: administrators
       role_assignments:

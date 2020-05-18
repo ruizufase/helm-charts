@@ -57,3 +57,5 @@ data:
 {{- end }}
   glance-protection.pp: |
 {{ include (print .Template.BasePath "/etc/_glance-protection.pp.tpl") . | indent 4 }}
+  glance-swift.conf: |
+{{ include (print .Template.BasePath "/etc/_glance-swift.conf.tpl") . | indent 4 }}

@@ -48,8 +48,8 @@ flavor = keystone
 enable_proxy_headers_parsing = true
 
 [glance_store]
-stores = {{ .Values.stores | default "file" | quote }}
-default_store = {{ .Values.default_store | default "file" | quote }}
+stores = {{ .Values.stores | default "swift" | quote }}
+default_store = {{ .Values.default_store | default "swift" | quote }}
 
 {{- if .Values.file.persistence.enabled }}
 filesystem_store_datadir = /glance_store
