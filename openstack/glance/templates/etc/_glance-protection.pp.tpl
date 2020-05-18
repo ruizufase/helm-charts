@@ -1,5 +1,5 @@
 [.*]
-create = @
+create = pp:image_admin_only
 read = @
-update = @
-delete = @
+update = pp:image_admin_only
+delete = pp:image_admin_only
