@@ -12,7 +12,7 @@
 
     "add_image": "rule:context_is_editor",
     "delete_image": "rule:context_is_editor",
-    "get_image": "rule:context_is_viewer",
+    "get_image": "role:admin or rule:context_is_viewer",
     "get_images": "role:admin or rule:context_is_viewer",
     "modify_image": "rule:context_is_editor",
     "publicize_image": "rule:context_is_cloud_admin or rule:admin",
