@@ -9,8 +9,7 @@ log_config_append = /etc/glance/logging.ini
 
 show_image_direct_url= True
 
-#disable default admin rights for role 'admin'
-admin_role = ''
+admin_role = 'image_admin'
 
 rpc_response_timeout = {{ .Values.rpc_response_timeout | default 300 }}
 rpc_workers = {{ .Values.rpc_workers | default 1 }}
