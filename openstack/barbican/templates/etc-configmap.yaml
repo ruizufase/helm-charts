@@ -30,3 +30,5 @@ data:
       match_type: glob
       glob_disable_ordering: false
       ttl: 0 # metrics do not expire
+  db-migration: |
+{{ include (print .Template.BasePath "/etc/_db-migration.tpl") . | indent 4 }}

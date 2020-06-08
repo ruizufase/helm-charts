@@ -22,10 +22,7 @@ spec:
             - kubernetes-entrypoint
           env:
             - name: COMMAND
-              value: "/var/lib/openstack/bin/barbican-status upgrade check"
-            - name: COMMAND
-              value: "/var/lib/openstack/bin/barbican-manage db upgrade"
-            - name: NAMESPACE
+              value: "bash /etc/db-migration"
               value: {{ .Release.Namespace }}
             - name: DEPENDENCY_SERVICE
               value: "barbican-mariadb"
