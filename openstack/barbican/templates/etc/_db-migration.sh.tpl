@@ -5,7 +5,6 @@ cd /var/lib/openstack/bin/
 echo "Current DB Version :" barbican-manage db current 
 
 {{- if ne .Values.release "train" }}
-
 echo "Placeholder Status :"
 barbican-status upgrade check
 

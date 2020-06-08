@@ -22,7 +22,7 @@ spec:
             - kubernetes-entrypoint
           env:
             - name: COMMAND
-              value: "bash /etc/barbican/db-migration"
+              value: "bash /etc/barbican/db-migration.sh"
             - name: NAMESPACE
               value: {{ .Release.Namespace }}
             - name: DEPENDENCY_SERVICE
@@ -38,8 +38,8 @@ spec:
             - name: etcbarbican
               mountPath: /etc/barbican
             - name: barbican-etc
-              mountPath: /etc/barbican/db-migration
-              subPath: db-migration
+              mountPath: /etc/barbican/db-migration.sh
+              subPath: db-migration.sh
               readOnly: true
             - name: barbican-etc
               mountPath: /etc/barbican/barbican.conf
