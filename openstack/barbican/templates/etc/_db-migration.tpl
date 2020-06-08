@@ -2,16 +2,17 @@
 
 cd /var/lib/openstack/bin/
 
-echo "Current DB Version :"
-barbican-manage db current 
+echo "Current DB Version :" barbican-manage db current 
 
-echo "Checking Upgrade :"
+{{- if ne .Values.release "train" }}
+
+echo "Placeholder Status :"
 barbican-status upgrade check
 
-echo "Proceeding with upgrade :"
+echo "Proceeding with upgrade if required:"
 barbican-manage db upgrade
 
-echo "DB Version after migration:"
-barbican-manage db current 
+echo "DB Version if migrated:" barbican-manage db current 
+{{- end }}
 
 exit 0

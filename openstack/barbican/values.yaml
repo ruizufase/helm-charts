@@ -9,6 +9,9 @@ global:
   master_password: ""
   dbUser: barbican
 
+# current barbican release
+release: train
+
 pod:
   lifecycle:
     upgrades:
