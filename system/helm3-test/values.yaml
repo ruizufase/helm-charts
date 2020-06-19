@@ -1,0 +1,5 @@
+redis:
+  persistence:
+    enabled: false
+  metrics:
+    enabled: false

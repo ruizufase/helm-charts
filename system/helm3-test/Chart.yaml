@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A test chart for testing the Helm 2 to 3 migration
+name: helm3-test
+version: 0.1.0
