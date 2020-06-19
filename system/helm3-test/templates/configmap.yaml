@@ -6,4 +6,4 @@ metadata:
 
 data:
   region: {{.Values.global.region}}
-  counter: 1
+  counter: "1"
